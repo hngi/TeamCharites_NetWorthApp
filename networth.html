@@ -1,0 +1,45 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Net Worth Form</title>
+    <script type="text/javascript" src="js/formcalculations.js"></script>
+    <link href="styles/networth.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload='hideTotal()'>
+    <div id="wrap">
+        <form action="" name="netWorthForm" id="netWorthForm" onsubmit="return false;">
+        <div>
+            <div class="cont_order">
+               <fieldset>
+                <legend>Know Your Net Worth</legend>
+               
+               <p>
+                   <label class="home" for='home'>Home Cost</label>
+                   <input type="number" id="home" name="home" placeholder="Your Home Cost" onchange="getHomeCost()" />
+               </p>
+
+                <p>
+                <p>
+                   <label class="land" for='land'>Land and Properties</label>
+                   <input type="number" id="land" name="land" placeholder="Your Land and Properties" onchange="getLandCost()" />
+                </p>
+
+                 <p>
+                   <label class="investments" for='investments'>Other Investments</label>
+                   <input type="number" id="investments" name="investments" placeholder="Your Other Investments" onchange="getInvestmentCost()" />
+                </p>
+               
+                <div id="totalPrice"></div>
+                
+                </fieldset>
+            </div>
+            
+        	
+            <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
+        </div>  
+       </form>
+	</div><!--End of wrap-->
+
+</body>
+</html>
