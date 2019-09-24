@@ -670,3 +670,249 @@ footer p {
 }
 
 
+/*MAKING THE SCREEN RESPONSIVE*/
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row {
+    padding: 0 2%;
+  }
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .steps-box {
+    margin-top: 10px;
+  }
+
+  .steps-box:last-child {
+    margin-top: 10px;
+  }
+
+  .works-steps {
+    margin-bottom: 40px;
+  }
+
+  .works-step:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .app-screen {
+    width: 50%;
+  }
+
+  .icon-small {
+    width: 17px;
+    margin-right: 5px;
+  }
+
+  .city-feature {
+    font-size: 90%;
+  }
+
+  .plan-box {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .plan-price {
+    font-size: 250%;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .row,
+  .hero-text-box {
+    padding: 0 4%;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+
+}
+
+/* section5 css */
+
+#section5 {
+  display: flex;
+  box-sizing: border-box;
+  padding: 2rem;
+  margin: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sec5 {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.sec5 h4 {
+  text-align: center;
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+/* set image to center */
+.sec5 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.volunteer5 {
+  background-color: #fe982d;
+  color: white;
+}
+
+/* for small screen size */
+@media screen and (max-width: 550px) {
+  #section5 {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+  }
+}
+
+/* end of section5 */
+
+/* ------------------------------------------------ */
+/* Footer styles */
+/* ------------------------------------------------ */
+
+.footer { 
+  background-color: #363434;
+  color: white; 
+  padding: 50px 80px 10px; 
+}
+
+.footer a:link, .footer a:visited { 
+  color: #FFFFFF; 
+  text-decoration: none; 
+}
+
+.footer a:hover, .footer a:active { 
+  color: #FF8121; 
+}
+
+.foot-title { 
+  font: 300 1.5em "Dosis", sans-serif;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.underbar { 
+  width: 50px; 
+  border-bottom: 2px solid #FFFFFF; }
+
+.foot-content { 
+  margin-top: 20px; 
+}
+
+.foot-content, .design-info { 
+  font: 400 1em "Open Sans", sans-serif; 
+}
+
+.foot-about, .foot-links, .foot-question { 
+  float: left; 
+}
+
+.foot-about { 
+  width: 40%; 
+}
+
+.foot-links { 
+  width: 20%;
+}
+
+.foot-question { 
+  width: 40%; 
+}
+
+.foot-about .foot-content { 
+  width: 60%; 
+}
+
+.clear::after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
+}
+
+.foot-info { 
+  text-align: center; 
+  margin-top: 30px; 
+}
+
+#team-stockholm, .material-icons { 
+  color: #FF8121; 
+}
+
+/* RESPONSIVE footer */
+
+/*For tablets*/
+@media only screen and (max-width: 1000px) {
+  .footer {
+    padding: 30px;
+  }
+
+  .foot-about { 
+    width: 35%; 
+  }
+
+  .foot-links { 
+    width: 20%;
+  }
+
+  .foot-question { 
+    width: 45%; 
+  }
+
+}
+
+/*For small displays and smartphones*/
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .foot-about, .foot-links, .foot-question, .foot-about .foot-content { 
+    float: none;
+    width: 100%;
+  }
+}
