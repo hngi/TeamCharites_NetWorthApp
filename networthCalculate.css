@@ -1,0 +1,114 @@
+body {
+	margin: 0
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#wrapper {
+	display: flex; 
+	flex-direction: column;
+	margin: auto;
+	padding: 5px;
+}
+
+#data {
+	background-color: rgba(128,128,128,0.3);
+	width: 90%;
+	margin: auto;
+	display: flex;
+	padding: 5px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#displayWorth {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(128,128,128,0.4);
+}
+
+#assets {
+	width: 48%;
+	padding: 5px;
+}
+
+#liabilities {
+	width: 48%;
+	padding: 5px;
+}
+
+#assets p, #liabilities p {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#rule {
+}
+
+.entry {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+#assets input, #liabilities input {
+	border: none;
+	outline: none;
+	height: 20px;
+}
+
+#moreAssets button, #moreLiabilities button {
+	background: rgba(192,192,192,0.9);
+	outline: none;
+}
+
+#moreAssets button:hover, #moreLiabilities button:hover {
+	color: rgba(192,192,192,0.9);
+	background-color: rgba(0,0,0,0.9);
+}
+
+#moreAssets, #moreLiabilities {
+}
+
+.addItems {
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+
+#justAssets, #justLiabilities {
+	display: none;
+}
+
+#totalAssets, #totalLiabilities {
+	margin-bottom: 15px;
+}
+
+#worth {
+
+}
+
+
+@media screen and (max-width: 767px) {
+	#data {
+		flex-direction: column;
+	}
+
+	#assets {
+		margin-bottom: 15px;
+	}
+
+	#assets, #liabilities {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+
