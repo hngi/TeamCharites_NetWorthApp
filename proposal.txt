@@ -1,0 +1,59 @@
+TEAM CHARITES
+PROJECT SCOPE
+
+WEB APPLICATION Name: Charites Finance.
+Domain Name: knowmyworth.com
+
+Company description/summary: A Website that would calculate the Net Worth for its users.
+
+
+Project Title:  Charis
+
+Project Focus:Net Worth Calculator
+( Responsiveness, Validation, Color Scheme)
+
+Features of the Website/List of pages:
+Sign up page
+Login page
+The Landing/Homepage Section: A brief introductory section,
+About Us Section: What the site is about
+Contact Us Section: A section with our email and phone numbers for users to reach out to us.
+Data Entry section: will include  button that will be tag 'calculate my Net Worth' this button will lead to the next page
+Data Entry Page; 
+This will include users ;
+ assets, debts (liabilities) details. The button of the page will have a button that will calculate the Net Worth from this details and lead to the last page showing its net worth..
+Net Worth Result page
+How it works:
+The Data entry form, sign up form,login form (The backend judgemental phase): The form can be filled online and submitted. 
+On Submission, the user create an account from the sign up page ,login, navigate to the data entry form (get response on net worth calculation)
+The Contact Us part will have a part where people can type their message enquiry and on submission, it sends an email notification to the staff of the organization.
+
+
+Performance Data
+
+Implementation Phase
+
+Login page
+Sign up page
+
+
+
+User Experience
+
+Welcome page(landing/homepage (
+
+Data entry form (to be filled)
+Net Worth Result page
+
+
+
+Features​: In order to achieve the project objective there are features that need to be met. The dashboard will have the pages:
+
+Home Page
+About us
+Contact us
+Data Entry
+
+The identified features for the project is:
+
+Home Page: Introduces user to the platform and user can then register to create an account by sign up or login if the user has an account already.
