@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" type="text/css" href="myNetworth.css">
+    	<script src="myNetworth.js"></script>
+    	<title>Calculate Your Networth</title>
+    </head>
+    <body>
+    	<div id="wrapper">
+            <div id="data">
+                <div id="assets">
+	                <p>Assets</p>
+	                <hr class="rule">
+
+	                <div class="entry"><label for="home">Your home:</label><input type="text" id="home" onfocusout="calculateWorth(this, 'assets')"></div>
+
+	                <div class="entry"><label>Shares:</label><input type="text" id="shares" onfocusout="calculateWorth(this, 'assets')"></div>
+
+	                <div class="entry"><label>Savings:</label><input type="text" id="savings" onfocusout="calculateWorth(this, 'assets')"></div>
+
+	                <div class="entry"><label>Trusts:</label><input type="text" id="trusts" onfocusout="calculateWorth(this, 'assets')"></div>
+
+	                <div id="moreAssets" class="addItems"><button onclick="moreAssetsOrLiabilities('assets')">Add item</button></div>
+
+	                <div id="totalAssets"> Your total assets: #<span id="justAssets"></span></div>
+                </div>
+
+                <div id="liabilities">
+	                <p>Liabilities</p>
+	                <hr class="rule">
+
+	                <div class="entry"><label>Student Loan:</label><input type="text" id="studentLoan" onfocusout="calculateWorth(this, 'liabilities')"></div>
+	                <div class="entry"><label>Home mortgage:</label><input type="text" id="homeMortgage" onfocusout="calculateWorth(this, 'liabilities')"></div>
+	                <div class="entry"><label>Credit card debit:</label><input type="text" id="creditCardDebit" onfocusout="calculateWorth(this, 'liabilities')"></div><div class="entry"><label>Car Loan:</label><input type="text" id="carLoan" onfocusout="calculateWorth(this, 'liabilities')"></div>
+
+
+                    <div id="moreLiabilities" class="addItems"><button onclick="moreAssetsOrLiabilities('liabilities')">Add item:</button></div>
+
+                    <div id="totalLiabilities"> Your total liabilities: #<span id="justLiabilities"></span></div>
+                </div>
+            </div>
+
+            <p id="displayWorth">Your networth is: #<span id="worth"></span></p>
+        </div>
+    </body>
+</html>
