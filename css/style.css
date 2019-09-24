@@ -107,7 +107,7 @@ h2:after {
 
 /* ----- ICONS ----- */
 .icon-big {
-    font-size: 350%;
+    font-size: 300%;
     display: block;
     color: #00b300;
     margin-bottom: 10px;
@@ -215,20 +215,20 @@ header {
     transform: translate(-50%, -50%);
 }
 
-/*.logo {
+.logo {
     height: 100px;
     width: auto;
     float: left;
     margin-top: 20px;
 }
 
-.logo-black { 
-    display: none;
+/* .logo-black {  */
+    /* display: none;
     height: 50px;
     width: auto;
     float: left;
     margin: 5px 0;
-}*/
+}*/ 
 
 /* Main navi */
 .main-nav {
