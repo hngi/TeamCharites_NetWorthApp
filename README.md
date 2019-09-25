@@ -1,12 +1,10 @@
 # main_files
 
-1) Some basic Javascript was used to sum the total of the asset values inputed in the text fields.
+Added a Signup/Signin page that opens when the Signin button is clicked.
 
-When the submit button is clicked the total asset values are shown below.
+Added a Networth Calculator. Click the Data Link to access the Networth Calculator.
 
-This code needs further improvements.
+These are not the final designs and they can be improved on.
 
-A liabilities form can also be included to calculate the amount of debt as well.
+The backend guys should kindly start working on the database and make use of the forms
 
-
-2) Added a Landing Page with Navbar and Links
