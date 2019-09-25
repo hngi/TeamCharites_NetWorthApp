@@ -10,3 +10,5 @@ A liabilities form can also be included to calculate the amount of debt as well.
 
 
 2) Added a Landing Page with Navbar and Links
+
+3) Added additional information about the page
