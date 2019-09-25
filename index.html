@@ -18,23 +18,23 @@
 <body>
     <header>
         <nav>
-            <div class="row">
+            <div class="row topnav">
                 <img src="css/img/logo.png" alt="Omnifood logo" class="logo">
-                <ul id='Links' class="main-nav js--main-nav animated flash ">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="calculator.html">Get Started</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="signup.html">Sign Up</a></li>
+                <ul id='links' class="main-nav animated wobble ">
+                    <li><a href="index.html">Home <i class='fa fa-home'></i></a></li>
+                    <li><a href="calculator.html">Get Started <i class='fa fa-step-forward'></i></a></li>
+                    <li><a href="about.html">About Us <i class="fa fa-send"></i></a></li>
+                    <li><a href="signup.html">Sign Up <i class='fa fa-sign-in'></i></a></li>
                     <!-- <li><a href="#"><i class='fa fa-user icon-small'></i></a></li> -->
                 </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i
+                <a href="javascript:void(0);" class="mobile-nav-icon" onclick="myFunction()"><i
                         class="fa fa-navicon icon"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <div class="row">
                 <div class="col span-3-of-3 animated flip" style='text-align: center'>
-                    <h1 style='padding-bottom:50px;'>Know your Net Worth. <br>Calculate your Assets & Liabilities.</h1>
+                    <h1 style='padding-bottom:50px; margin-top: 50px; '>Know your Net Worth. <br>Calculate your Assets & Liabilities.</h1>
                     <a class="btn btn-full js--scroll-to-plans" href="signup.html">Sign Up</a>
                     <a class="btn btn-ghost js--scroll-to-start" href="#features">Show me more</a>
                 </div>
@@ -136,11 +136,11 @@
 
     <script>
     function myFunction() {
-            var x = document.getElementById("Links");
+            var x = document.getElementById("links");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
-                x.style.display = "block";
+                x.style.display = "inline-block";
             }
         }
     </script>

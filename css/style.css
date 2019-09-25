@@ -33,6 +33,10 @@ body {
 /* ----------------------------------------------- */
 
 
+.topnav#Links{
+    display: none;
+}
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
@@ -85,6 +89,8 @@ h2:after {
     margin: 0 auto;
     margin-top: 30px;
 }
+
+
 
 /* ----- PARAGRAPHS ----- */
 .long-copy {
@@ -251,7 +257,9 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
+    color: #3afa3a;
     border-bottom: 2px solid #00b300;
+    border-top: 2px solid #00b300;
 }
 
 
