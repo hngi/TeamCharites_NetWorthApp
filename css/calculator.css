@@ -121,9 +121,39 @@ body {
 	align-items: center;
 	width: 80%;
 	padding: 5px;
-	margin: 20px auto;
+	margin: 30px auto 20px auto;
 	font-size: 16px;
 	font-weight: bold;
+}
+
+
+#reset-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	padding: 5px;
+	margin: 20px auto;
+}
+
+#reset {
+	background-color: rgba(0,179,0,0.8);
+	color: white;
+	border-radius: 10px;
+	width: 164px;
+	height: 40px;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 22px;
+	border-color: #00B300;
+	outline: none;
+	cursor: pointer;
+}
+
+#reset:hover {
+	background-color: transparent;
+	color: #00B300;
 }
 
 #rule {
@@ -217,10 +247,23 @@ footer {
 	#assets {
 		margin-bottom: 30px;
 	}
-
-	#menu {
-		width: 20%;
-	}
 }
 
+@media screen and (max-width: 600px) {
 
+	#nav {
+		padding-top: 17px;
+	}
+
+	#menu {
+		width: 15%;
+	}
+
+	#logo-div {
+		width: 15%;
+	}
+
+	#menu li a {
+		font-size: 12px;
+		font-weight: normal;
+}

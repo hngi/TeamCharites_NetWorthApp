@@ -4,10 +4,10 @@
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link rel="stylesheet" type="text/css" href="css/calculator.css">
-    	<script src="js/calculator.js"></script>
+    	<script src="calculator.js"></script>
     	<title>Calculate Your Networth</title>
     </head>
-    <body>
+    <body onload="notify()">
         <div id="image">
             <nav id="nav">
                 <div id="logo-div"><img src="img/logo.png" id="logo" alt="logo"></div>
@@ -15,7 +15,7 @@
                     <li><a href="homepage.html">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="calculator.html">DATA</a></li>
-                    <li><a href="sign-up.html">CONTACT</a></li>
+                    <li><a href="sign-up.htmlT">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,13 +29,13 @@
 	                <hr class="rule">
 
                     <div class="extra">
-	                <div class="entry"><label for="home">Your home:</label><input type="text" id="home" onfocusout="calculateWorth(this, 'assets')"></div>
+	                <div class="entry"><label for="home">Your home:</label><input class= "change" type="text" id="home" placeholder=" Enter asset value" onfocusout="calculateWorth(this, 'assets')"></div>
 
-	                <div class="entry"><label>Shares:</label><input type="text" id="shares" onfocusout="calculateWorth(this, 'assets')"></div>
+	                <div class="entry"><label>Shares:</label><input class= "change" type="text" id="shares" placeholder=" Enter asset value" onfocusout="calculateWorth(this, 'assets')"></div>
 
-	                <div class="entry"><label>Savings:</label><input type="text" id="savings" onfocusout="calculateWorth(this, 'assets')"></div>
+	                <div class="entry"><label>Savings:</label><input class= "change" type="text" id="savings" placeholder=" Enter asset value" onfocusout="calculateWorth(this, 'assets')"></div>
 
-	                <div class="entry"><label>Trusts:</label><input type="text" id="trusts" onfocusout="calculateWorth(this, 'assets')"></div>
+	                <div class="entry"><label>Trusts:</label><input class= "change" type="text" id="trusts" placeholder=" Enter asset value" onfocusout="calculateWorth(this, 'assets')"></div>
 
 	                <div id="moreAssets" class="addItems"><button onclick="moreAssetsOrLiabilities('assets')">Add item</button></div>
 
@@ -48,9 +48,10 @@
 	                <hr class="rule">
 
                     <div class="extra">
-	                <div class="entry"><label>Student Loan:</label><input type="text" id="studentLoan" onfocusout="calculateWorth(this, 'liabilities')"></div>
-	                <div class="entry"><label>Home mortgage:</label><input type="text" id="homeMortgage" onfocusout="calculateWorth(this, 'liabilities')"></div>
-	                <div class="entry"><label>Credit card debit:</label><input type="text" id="creditCardDebit" onfocusout="calculateWorth(this, 'liabilities')"></div><div class="entry"><label>Car Loan:</label><input type="text" id="carLoan" onfocusout="calculateWorth(this, 'liabilities')"></div>
+	                <div class="entry"><label>Student Loan:</label><input class= "change" type="text" id="studentLoan" placeholder=" Enter liability value" onfocusout="calculateWorth(this, 'liabilities')"></div>
+	                <div class="entry"><label>Home mortgage:</label><input class= "change" type="text" id="homeMortgage" placeholder=" Enter liability value" onfocusout="calculateWorth(this, 'liabilities')"></div>
+	                <div class="entry"><label>Credit card debit:</label><input class= "change" type="text" id="creditCardDebit" placeholder=" Enter liability value" onfocusout="calculateWorth(this, 'liabilities')">
+                    </div><div class="entry"><label>Car Loan:</label><input class= "change" type="text" id="carLoan" placeholder=" Enter liability value" onfocusout="calculateWorth(this, 'liabilities')"></div>
 
 
                     <div id="moreLiabilities" class="addItems"><button onclick="moreAssetsOrLiabilities('liabilities')">Add item:</button></div>
@@ -61,6 +62,7 @@
                 </div>
 
                 <p id="displayWorth">YOUR NETWORTH IS: #<span id="worth"></span></p>
+                <div id="reset-div"><button id="reset" onclick= "Reset()">reset</button></div>
             </div>
         </div>
         <footer>&copy; Team Charites</footer>
