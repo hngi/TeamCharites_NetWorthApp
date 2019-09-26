@@ -6,7 +6,7 @@ body {
 
 #image {
 	border: 1px solid transparent;
-	background: url(https://res.cloudinary.com/barbzy-dev1/image/upload/v1569413300/dollar-resized4_x83i65.jpg) top center no-repeat;
+	background: url(../css/img/header.jpg) top center no-repeat;
 	height: 11vh;
 	top: 0;
 	left: 0;
@@ -30,7 +30,7 @@ body {
 
 #logo {
 	max-width: 100%;
-    height: auto;
+    height: 50px;
 }
 
 #menu {
