@@ -38,6 +38,15 @@
 
             <div id="form-container">
                 <img src="css/img/resized.jpg"/>
+		    <?php if (count($errors) > 0): ?>
+                        <div class="alert alert-danger">
+                         <?php foreach ($errors as $error): ?>
+                          <li>
+                            <?php echo $error; ?>
+                          </li>
+                         <?php endforeach;?>
+                         </div>
+                     <?php endif;?>
                 <form id="log-in" action="login.php" method="post">
                     <input type="text" name="username" placeholder=" Username" required>
                     <input type="password" name="password" placeholder=" Password" required>
