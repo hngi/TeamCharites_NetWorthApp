@@ -1,14 +1,7 @@
-# main_files
+About Us
 
-1) Some basic Javascript was used to sum the total of the asset values inputed in the text fields.
+Charites Finance is a start up that aims to create a stable financial life for its users. We are interested in helping you have a knowledge of your current financial status and assist you in maximizing your money for a secure future.
 
-When the submit button is clicked the total asset values are shown below.
+About the App
 
-This code needs further improvements.
-
-A liabilities form can also be included to calculate the amount of debt as well.
-
-
-2) Added a Landing Page with Navbar and Links
-
-3) Added additional information about the page
+This free calculator helps you get a view of your financial positon by adding the values of your assets and substracting your liabilites.
