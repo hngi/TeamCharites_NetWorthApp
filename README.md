@@ -10,7 +10,7 @@ The backend guys should kindly start working on the database and make use of the
 
 Added Navbar Links to the Signin/Signup page
 
-
+Added a reset button for the Calculator
 
 
 
