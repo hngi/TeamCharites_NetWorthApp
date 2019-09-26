@@ -10,7 +10,19 @@
 	    <title>Login Page</title>
     </head>
     <body>
+         
     	<div id="container">
+             <nav id="nav">
+                <!-- <div id="logo-div"><img src="logo.png" id="logo" alt="logo"></div> -->
+                    <ul>
+                        <li><a href="homepage.html">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="calculator.html">DATA</a></li>
+                        <li><a href="sign-up.html">CONTACT</a></li>
+                    </ul>
+                     
+                </nav>
+
     	    <!-- <div id="logo">
     		    <h1>CODE HEIST</h1>
     		    <h2 onload="animate()">
@@ -38,19 +50,39 @@
     		    </h2>
     	    </div> -->
 
+             <!-- <nav id="nav"> -->
+                <!-- <div id="logo-div"><img src="logo.png" id="logo" alt="logo"></div> -->
+                   <!--  <ul>
+                        <li><a href="homepage.html">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="calculator.html">DATA</a></li>
+                        <li><a href="sign-up.html">CONTACT</a></li>
+                    </ul> -->
+                     
+                <!-- </nav> -->
+
             <div id="form-container">
-                <img src="img/dollar-resized2.jpg"/>
-                <form id="log-in" action="login.php" method="post">
-                    <input type="text" name="username" placeholder=" Username" required>
-                    <input type="password" name="password" placeholder=" Password" required>
 
-                    <input id="login" type="Submit" value="Sign in">
 
-                    <div id="login-alert">
-                        <p>Don't have an account?</p>
-                        <button type="button" onclick="showRegister()" value="signup">Sign up</button>
-                    </div>
-                </form>
+                <!-- <div class="header-links">
+                    <a href="#">What?</a>
+                </div> -->
+
+                <div class="img-form">
+                   <img class="img" src="img/dollar-resized3.jpg"/>
+                   
+                    <form id="log-in" action="login.php" method="post">
+                        <input type="text" name="username" placeholder=" Username" required>
+                        <input type="password" name="password" placeholder=" Password" required>
+
+                        <input id="login" type="Submit" value="Sign in">
+
+                        <div id="login-alert">
+                            <p>Don't have an account?</p>
+                            <button type="button" onclick="showRegister()" value="signup">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
 
                 <form id="register" action="signup.php" method="post">
                     <input type="text" name="firstname" placeholder=" Firstname">
