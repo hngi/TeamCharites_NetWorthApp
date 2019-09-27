@@ -9,18 +9,14 @@
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-
-    <link rel="stylesheet" href="css/about.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
 
 </head>
 
 
-<body onload="myFunction()" style="margin:0;">
-
-    <div id="loader"></div>
-
-    <div id="image">
+<body>
+    <!-- <div id="image">
             <nav id="nav">
                 <div id="logo-div"><img src="css/img/logo.png" id="logo" alt="logo"></div>
                 <ul id="menu">
@@ -29,30 +25,57 @@
                     <li><a href="calculator.html">DATA ENTRY</a></li>
                     <li><a href="about.html">CONTACT</a></li>
                 </ul>
+            </nav> -->
+            <nav class="navbar navbar-expand-md text-white navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="css/img/logo.png" id='logo' alt="Brand"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="navbar-toggler-icon text-white"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-white" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CALCULATOR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SOLAR POWER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TEAMS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-        </div>
 
-    <div class="container mt-5" id="myDiv" style="display:none;" class="animate-bottom">
+
+    <div class="container mt-5" class="animate-bottom">
         <div class="text-content">
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <h2 class="pt-3 animated fadeInLeftBig">About Us</h2>
-                    <img src="css/img/header.jpg" class='img-fluid animated slideInLeft' alt="">
-                    <p class='animated tada'>Charites Finance is a start up that aims to create a stable financial life
+                    <h2 class="pt-3">About Us</h2>
+                    <img src="css/img/header.jpg" class='img-fluid' alt="">
+                    <p>Charites Finance is a start up that aims to create a stable financial life
                         for its users. We are
                         interested in helping you have a knowledge of your current financial status and assist you in
                         maximizing your money for a secure future.</p>
                 </div>
 
                 <div class="col-md-6">
-                    <h2 class="pt-3 animated fadeInLeftBig">Contact Us</h2>
+                    <h2 class="pt-3">Contact Us</h2>
                     <form action="">
-                        <input type="text" class='field animated bounceInDown' placeholder="Your Name" required>
-                        <input type="email" class="field animated bounceInDown" placeholder="Email Address" required>
-                        <input type="text" class="field animated bounceInDown" placeholder="Telephone Number" required>
-                        <textarea name="" class="field area animated bounceInDown" id="" placeholder="Message"
+                        <input type="text" class='field' placeholder="Your Name" required>
+                        <input type="email" class="field" placeholder="Email Address" required>
+                        <input type="text" class="field" placeholder="Telephone Number" required>
+                        <textarea name="" class="field area" id="" placeholder="Message"
                             required></textarea>
-                        <button type="submit" class='btn animated bounce'>Submit</button>
+                        <button type="submit" class='btn'>Submit</button>
                     </form>
                 </div>
             </div>
@@ -60,35 +83,18 @@
     </div>
     </div>
 
-    <footer class='animated bounceInDown'>
+    <footer>
         <p>&copy; Team Charites</p>
     </footer>
 
 
-
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 </body>
-
-<script>
-    var myVar;
-
-    function myFunction() {
-        myVar = setTimeout(showPage, 500);
-    }
-
-    function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("myDiv").style.display = "block";
-    }
-</script>
-
-
-
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="jquery.js"></script>
-<script src="popper.min.js"></script>
-<script src="bootstrap.js"></script>
+
 
 </html>
