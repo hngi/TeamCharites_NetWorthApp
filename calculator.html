@@ -2,23 +2,38 @@
 <html lang="en">
     <head>
     	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">        
     	<link rel="stylesheet" type="text/css" href="css/calculator.css">
-    	<script src="js/calculator.js"></script>
     	<title>Calculate Your Networth</title>
     </head>
     <body>
-        <div id="image">
-            <nav id="nav">
-                <div id="logo-div"><img src="css/img/logo.png" id="logo" alt="logo"></div>
-                <ul id="menu">
-                    <li><a href="homepage.html">HOME</a></li>
-                    <li><a href="signup.html">SIGN UP</a></li>
-                    <li><a href="calculator.html">DATA ENTRY</a></li>
-                    <li><a href="about.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
+        
+            <nav class="navbar navbar-expand-md text-white navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="css/img/nav.png" id='logo' alt="Brand"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                            <span class="navbar-toggler-icon text-white"></span>
+                        </button>
+                        <div class="collapse navbar-collapse text-white" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="homepage.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="signup.html">SIGN IN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="calculator.html">CALCULATE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">ABOUT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+    
             
         <div id="data">
             <h3>NETWORTH CALCULATOR</h3>
@@ -64,5 +79,12 @@
             </div>
         </div>
         <footer>&copy; Team Charites</footer>
+
+        <script src="js/calculator.js"></script>
+    	<script src="js/jquery.js"></script>
+    	<script src="js/popper.min.js"></script>
+    	<script src="js/bootstrap.js"></script>
+        
+
     </body>
 </html>

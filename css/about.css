@@ -173,18 +173,6 @@ footer {
   color: #517fa4;
 }
 
-#image {
-	border: 1px solid transparent;
-	background: url(../css/img/header.jpg) top center no-repeat;
-	height: 13vh;
-	top: 0;
-	left: 0;
-	right: 0;
-	/* position: fixed; */
-	opacity: 0.8;
-	background-color: black;
-}
-
 nav li {
   display: inline-block;
   margin-left: 40px;
@@ -210,7 +198,7 @@ nav li {
 }
 
 #logo {
-  height: 60px;
+  height: 80px;
   width: auto;
   /* float: left; */
   margin-top: 5px;
@@ -264,4 +252,8 @@ footer {
 	opacity: 0.8;
 	background-color: black;
 }
+#logo{
+  height:50px;
+}
+
 }
