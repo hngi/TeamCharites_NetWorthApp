@@ -4,63 +4,133 @@
 <head lang="en">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
 	<title>Login & Signup Page</title>
+
+	<style>
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke=' #008000 ' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .navbar-toggler {
+            border-color: #008000;
+        }
+    </style>
 </head>
 
 <body>
 
-	<div id="image">
-		<nav id="nav">
-			<div id="logo-div"><img src="css/img/logo.png" id="logo" alt="logo"></div>
-			<ul id="menu">
-				<li><a href="homepage.html">HOME</a></li>
-				<li><a href="signup.html">SIGN UP</a></li>
-				<li><a href="calculator.html">DATA ENTRY</a></li>
-				<li><a href="about.html">CONTACT</a></li>
-			</ul>
-		</nav>
-	</div>
+	<nav class="navbar navbar-expand-md text-white navbar-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="css/img/nav.png" id='logo' alt="Brand"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon text-white"></span>
+			</button>
+			<div class="collapse navbar-collapse text-white" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="signup.html">SIGN IN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="calculator.html">CALCULATE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">ABOUT</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
 
-	<div id="container">
-		<div id="form-container">
-			<img src="css/img/resized.jpg" />
-			<form id="log-in" action="login.php" method="post">
-				<input type="text" name="username" placeholder=" Username" required>
-				<input type="password" name="password" placeholder=" Password" required>
 
-				<input id="login" type="Submit" value="Sign in">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-7">
 
-				<div id="login-alert">
-					<p>Don't have an account?</p>
-					<button type="button" onclick="showRegister()" value="signup">Sign up</button>
-				</div>
-			</form>
+				<img src="css/img/resized.jpg" class='img-fluid mt-3'>
+				<form id="log-in" action="login.php" method="post">
+					<input type="text" name="username" placeholder=" Username" required>
+					<input type="password" name="password" placeholder=" Password" required>
 
-			<form id="register" action="signup.php" method="post">
-				<input type="text" name="firstname" placeholder=" Firstname" required>
-				<input type="text" name="lastname" placeholder=" Lastname" required>
-				<input type="text" name="username" placeholder=" Username" required>
-				<input type="email" name="email" placeholder=" Email address" required>
-				<input type="password" name="password" placeholder=" Password" required>
+					<input id="login" type="Submit" value="Sign in">
 
-				<input id="reg" type="Submit" value="Sign up">
+					<div id="login-alert">
+						<p>Don't have an account?</p>
+						<button type="button" onclick="showRegister()" value="signup">Sign up</button>
+					</div>
+				</form>
 
-				<div id="register-alert">
-					<p>Have an account?</p>
-					<button type="button" onclick="hideRegister()" value="signin">Sign in</button>
-				</div>
-			</form>
+				<form id="register" action="signup.php" method="post">
+					<input type="text" name="firstname" placeholder=" Firstname" required>
+					<input type="text" name="lastname" placeholder=" Lastname" required>
+					<input type="text" name="username" placeholder=" Username" required>
+					<input type="email" name="email" placeholder=" Email address" required>
+					<input type="password" name="password" placeholder=" Password" required>
+
+					<input id="reg" type="Submit" value="Sign up">
+
+					<div id="register-alert">
+						<p>Have an account?</p>
+						<button type="button" onclick="hideRegister()" value="signin">Sign in</button>
+					</div>
+				</form>
+
+			</div>
+			<div class="col-md-1"></div>
 
 		</div>
-
 	</div>
 
-	<footer>&copy; Team Charites</footer>
+
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3 class='animated bounce'>About Us</h3>
+                    <p>Charites Finance is a start up that aims to create a stable financial life for its users. We are
+                        interested in helping you have a knowledge of your current financial status and assist you in
+                        maximizing your money for a secure future.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class='animated bounce'>About the App</h3>
+                    <p>This free calculator helps you get a view of your financial positon by adding the values of your
+                        assets and substracting your liabilites.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class='animated bounce'>Contact Us</h3>
+                    <address style="margin-bottom:30px;">
+                        Team Charites <br>
+                        3, Remote House,<br>
+                        HNG Avenue, Nigeria <br>
+                        +234-1111-0000 <br>
+                        info@charitesfinance.com
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <p style='text-align: center' class='animated rollIn'>
+                    CharitesFinance.com &copy;  2019
+                </p>
+            </div>
+            </div>
+        </div>
+        </footer>
+
+
+
+
 	<script type="text/javascript" src="js/signup.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 
 </html>
