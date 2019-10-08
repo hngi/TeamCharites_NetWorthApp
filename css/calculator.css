@@ -1,0 +1,306 @@
+*{
+    padding:0;
+    margin :0;
+    box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#logo {
+	max-width: 100%;
+    height: auto;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 40px;
+  }
+  
+  .navbar-nav .nav-link,
+  .navbar-light .navbar-nav .nav-link {
+	color: #fff;
+	/* border-bottom: 2px solid yellow; */
+  }
+  
+  .navbar-nav li:last-child{
+	margin-right: 30px;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+	  color: #00b300;
+  }
+  
+  .navbar-light{
+	background: url(../css/img/header.jpg);
+  }
+  
+  #logo {
+	height: 80px;
+	width: auto;
+	/* float: left; */
+	margin-top: 5px;
+	margin-left: 25px;
+	padding: auto;
+  
+  }
+
+#data {
+	top: 15vh;
+	width: 95%;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	border: 1px solid grey;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 10px;
+}
+
+#data h3 {
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 30px;
+
+}
+
+#data h5 {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	text-align: center;
+	opacity: 0.4;
+}
+
+#calculator {
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+	justify-content: center;
+}
+
+.extra {
+	width: 95%;
+	margin: auto;
+}
+
+#assets {
+	padding: 5px;
+	margin-right: 20px;
+	width: 40%;
+}
+
+#liabilities {
+	margin-left: 20px;
+	padding: 5px;
+	width: 40%;
+}
+
+#assets p, #liabilities p {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#displayWorth {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	padding: 5px;
+	margin: 30px auto 20px auto;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+#reset-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	padding: 5px;
+	margin: 20px auto;
+}
+
+#reset {
+	background-color: #00b300;
+	color: white;
+	border-radius: 5px;
+	width: 164px;
+	height: 40px;
+	font-size: 16px;
+	font-style: normal;
+	/* font-weight: bold; */
+	line-height: 22px;
+	border-color: #00B300;
+	outline: none;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+#reset:hover {
+	background-color: transparent;
+	color: #00B300;
+}
+
+#rule {
+	border: 1px solid #00B300;
+	width: 168px;
+}
+
+.entry {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.entry label {
+	font-size: 16px;
+}
+
+
+#assets input, #liabilities input {
+	border: 1px solid grey;
+	box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+	outline: none;
+	height: 25px;
+	box-sizing: border-box;
+	padding: 5px;
+	border-radius: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#assets input:focus, #liabilities input:focus {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} 
+
+#moreAssets button, #moreLiabilities button {
+	background: #00B300;
+	color:whitesmoke;
+}
+
+#moreAssets button:hover, #moreLiabilities button:hover {
+	color: #00B300;
+	border: 1px solid #00B300;
+	background: #fafcfe;
+}
+
+#moreAssets, #moreLiabilities {
+}
+
+.addItems {
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+
+#justAssets, #justLiabilities {
+	display: none;
+}
+
+#totalAssets, #totalLiabilities {
+	margin-top: 35px;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+#worth {
+
+}
+
+footer {
+	background-color: #333;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 80%;
+	margin-top: 20px;
+  }
+  
+  .footer-nav {
+	list-style: none;
+	float: left;
+  }
+  
+  
+  
+  .footer-nav li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+  
+  .footer-nav li:last-child {
+	margin-right: 0;
+  }
+  
+  .footer-nav li a:link,
+  .footer-nav li a:visited, {
+	text-decoration: none;
+	border: 0;
+	color: #888;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+  }
+  
+  .footer-nav li a:hover,
+  .footer-nav li a:active {
+	color: #ddd;
+  }
+  
+  footer p {
+	color: #fff;
+	/* text-align: center; */
+	margin-top: 10px;
+	line-height: 2em;
+  }
+  footer h3{
+	font-size: 22px;
+	color: #00b300;
+  }
+  footer address{
+	font-size: 14px;
+	color: #fefffe;
+	line-height: 2em;
+  }
+
+
+@media screen and (max-width: 900px) {
+	#calculator {
+		flex-direction: column;
+	}
+
+	#logo{
+		height : 50px;
+		width: auto;
+	}
+
+	#assets, #liabilities {
+		border: 1px solid grey;
+		width: 90%;
+		margin: auto;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	}
+
+	#assets {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+
+}
