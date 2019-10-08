@@ -7,10 +7,9 @@ This free calculator helps you get a view of your financial positon by adding th
 Use this link to view the Website: https://networthapp-charites.000webhostapp.com
 
 
-Fork the Repository and Clone the develop branch to access the files
+Fork the Repository and clone the develop branch to access the files
 
-Use the following command to clone the develop branch
-git clone --single-branch --branch <branchname> <remote-repo>
+
 
 
 [![Build Status](https://travis-ci.org/timolinn/hng.tech.svg?branch=master)](https://travis-ci.org/timolinn/hng.tech)
