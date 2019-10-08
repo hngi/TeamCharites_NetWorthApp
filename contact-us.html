@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" type="text/css" href="css/contact-us.css">
+        <link rel="stylesheet" type="text/css" href="">
+        <link rel="stylesheet" href="css/all.min.css"></link>
+    	<script src=""></script>
+    	<title>CONTACT PAGE</title>
+    </head>
+    <body>
+        <div id="image">
+            <nav id="nav">
+                <div id="logo-div"><img src="css/logo.png" id="logo" alt="logo"></div>
+                <ul id="menu">
+                    <li><a href="theHomePage.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">DATA</a></li>
+                    <li><a href=""><i class="far fa-user"></i></a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="main">
+            <h2 id="mainH3">CONTACT US</h2>
+            <form id="contactUs">
+                <div class="contactUsDiv">
+                    <input type="text" name="fullname" id="fullname" class="contact" placeholder=" Fullname" required>
+                </div>
+                <div class="contactUsDiv">
+                    <input type="email" name="email" id="email" class="contact" placeholder=" Email Address" required>
+                </div>
+                <div class="contactUsDiv">
+                    <input type="number" name="phoneNumber" id="phoneNumber" class="contact" placeholder=" Telephone number" required>
+                </div>
+                <div class="contactUsDiv">
+                    <select name="cars" id="typeOfIssue" class="contact">
+                        <option value="typeOfIssue" selected disabled>Type of issue....</option>
+                        <option value="saab">Account Related</option>
+                        <option value="fiat">Transactions</option>
+                        <option value="audi">Other Services</option>
+                    </select>
+                </div>
+                <div class="contactUsDiv">
+                    <textarea name="message" id="message" form="contactUs" placeholder=" Message"></textarea>
+                </div>
+                <div id="subscribeDivInner">
+                    <input type="checkbox" name="subscribe" id="subscribe"><span id="subscribeLabel">Subscribe to Newsletter</span>
+                </div>
+                <div class="submitButton">
+                    <button type="submit" name="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <footer id="footer">&copy; Team Charites</footer>
+    </body>
+</html>
