@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head lang="en">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,53 +7,37 @@
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<title>Login & Signup Page</title>
-
-
 </head>
-
 <body>
 
 	<nav class="navbar navbar-expand-md text-white navbar-light">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='nav-logo' alt="Brand"></a>
-			<button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse text-white" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-	                <li class="nav-item">
-	                    <a class="nav-link" href="index.html">HOME</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" href="about.html">ABOUT</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" href="calculator.html">CALCULATOR</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" href="howto.html">TIPS</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" href="signup.php">SIGN UP</a>
-	                </li>     
-	                
-	            </ul>
-			</div>
-		</div>
-	</nav>
-
-
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='logo' alt="Brand"></a>
+            <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse text-white" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+						<a class="nav-link" href="howto.html">TIPS</a>
+					</li>               
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.php">LOGIN</a>
+                    </li>                
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 	<div id="container">
-
-		<p>Thank you for Signing up.</p>
-		
+		<p>Thank you for Signing up.</p>		
 	</div>
-
-
-
-	
-
 
 	<footer>
         <div class="container footer-height">
@@ -89,7 +72,7 @@
             </div>
             </div>
         </div>
-        </footer>
+    </footer>
 
 	<script type="text/javascript" src="js/signup.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>

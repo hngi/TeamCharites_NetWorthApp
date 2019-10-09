@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/showmemore.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/style.css">
     <title>Calculate Your Networth</title>
 
     <style>
@@ -16,16 +16,20 @@
         .navbar-toggler {
             border-color: #008000;
         }
+
+        #data {
+            margin-top: 3em;
+        }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-md text-white navbar-light bg-light">
+    <nav class="navbar navbar-expand-md text-white navbar-light">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='logo' alt="Brand"></a>
             <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon text-success"></span>
+                <span class="navbar-toggler-icon text-white"></span>
             </button>
             <div class="collapse navbar-collapse text-white" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -33,29 +37,39 @@
                         <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="logout.php">SIGN OUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="calculator.html">CALCULATOR</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="about.html">ABOUT</a>
                     </li>
+                    <li class="nav-item">
+						<a class="nav-link" href="howto.html">TIPS</a>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.php">REGISTER</a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.php">LOGIN</a>
+                    </li>                
                 </ul>
             </div>
         </div>
     </nav>
-           
+    
+    <div class="container">
         <div id="data">
-            <h3>Why Knowing Your Networth Is Important </h3>
+            <h2>Why Knowing Your Networth Is Important </h2>
             <p>
-                Your Networth is the amount by which your assets exceeds your liabilities. In simple terms, Networth is the difference between what you own and what you owe. If your assets exceeds your responsiblity, you have a positive Networth, conversely, if your liabilities are greater than your assets, you have a negative Networth.<br/>
-                your Networth providesa snapshot of your financial situation at any point in time. if you calculate your networth today, you will see end result of everything you've earned and everything you've spent up until right now. while this figure is helpful for example, it can provide a wake up call if you are completely off track or a "job-well-done" confirmation if you are doing well. Tracking your networth over time offers a more meaningful view of your financies.
-
+                Your Networth is the amount by which your assets exceeds your liabilities. In simple terms, Networth is the difference between what you own and what you owe. 
+                <br>
+                If your assets exceeds your responsiblity, you have a positive Networth, conversely, if your liabilities are greater than your assets, you have a negative Networth.
+                <br/>
+                Your Networth provides a snapshot of your financial situation at any point in time. If you calculate your networth today, you will see end result of everything you've earned and everything you've spent up until right now. 
+                <br> 
+                While this figure is helpful for example, it can provide a wake up call if you are completely off track or a "job-well-done" confirmation if you are doing well. 
+                <br>
+                Tracking your networth over time offers a more meaningful view of your financies.
             </p>
-
-            <h3>Definitions</h3>
-            
+            <br>
+            <h2>Definitions</h2>
+            <br>
             <h4>Your Home</h4>
             <p>This is the current value of your home. it couls be possible to the actual market valueof your home. if you have owed your home for a number of years the current market value could be significantly higher than your original purchase price</p>
         <hr>        
@@ -79,8 +93,8 @@
         <hr>
             <h4>Car Loan</h4>
             <p>This is the total amount you would have to pay to own your car</p>
-
-        </div> 
+        </div>
+    </div>
                     
 
         <footer>
