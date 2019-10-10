@@ -23,26 +23,23 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md text-white navbar-light bg-light">
+    <nav class="navbar navbar-expand-md text-white navbar-light">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='logo' alt="Brand"></a>
             <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon text-success"></span>
+                <span class="navbar-toggler-icon text-white"></span>
             </button>
             <div class="collapse navbar-collapse text-white" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">HOME</a>
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signup.php">SIGN UP</a>
+                        <a class="nav-link" href="about.html">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="calculator.php">CALCULATOR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.php">ABOUT</a>
-                    </li>
+						<a class="nav-link" href="howto.html">TIPS</a>
+					</li>               
                 </ul>
             </div>
         </div>

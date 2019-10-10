@@ -106,34 +106,30 @@ if(isset($_POST['submit'])){
 
 <body>
 
-	<nav class="navbar navbar-expand-md text-white navbar-light">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='nav-logo' alt="Brand"></a>
-			<button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse text-white" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="calculator.html">CALCULATOR</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="howto.html">TIPS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="signup.php">SIGN UP</a>
-                            </li>     
-                            
+    <nav class="navbar navbar-expand-md text-white navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='logo' alt="Brand"></a>
+            <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse text-white" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+						<a class="nav-link" href="howto.html">TIPS</a>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.php">REGISTER</a>
+                    </li>               
                 </ul>
-			</div>
-		</div>
-	</nav>
+            </div>
+        </div>
+    </nav>
 
 
 
@@ -148,19 +144,19 @@ if(isset($_POST['submit'])){
 			</div> -->
 
 			<div class="img-form">
-			   <img class="img" src="css/img/dollar-resized3.jpg"/>
-			   
+            <img class="img" src="css/img/dollar-resized3.jpg" height="100" width="100%"/>
+            <h3 class="text-center text-bold mt-3 mb-3" style="color: #00B300; font-weight: 800;">SIGN IN</h3>
 				<form id="log-in" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  method="post" name="uform">
-					<div id="username1_div">
+					
 						<input type="text" name="username1" placeholder=" Username" value="" >
 						 <div id="username1_error" style="color:red;"></div>
-					</div>
+					
 
-					<div id="password1_div">
+					
 						<input type="password" name="password1" placeholder=" Password">
 						 <div id="pass1_error" style="color:red;"></div>
 
-					</div>
+					
 
 					<input id="login" name="submit" type="Submit"  value="Sign in">
 
