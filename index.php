@@ -26,6 +26,7 @@
 
 
 <body>
+    
     <nav class="navbar navbar-expand-md text-white navbar-light">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='logo' alt="Brand"></a>
@@ -35,17 +36,20 @@
             <div class="collapse navbar-collapse text-white" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">HOME</a>
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signup.php">SIGN UP</a>
+                        <a class="nav-link" href="about.html">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="calculator.php">CALCULATOR</a>
-                    </li>
+						<a class="nav-link" href="howto.html">TIPS</a>
+					</li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">ABOUT</a>
-                    </li>
+                        <a class="nav-link" href="signup.php">REGISTER</a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.php">LOGIN</a>
+                    </li>                
                 </ul>
             </div>
         </div>
@@ -60,11 +64,8 @@
                     intervals in order to
                     plan for the safier, healthier and cost friendly future you and your family have always dreamt of.
                 </p>
-
                 <a href="#features" class='btn mt-3 mb-3 shadow-lg'>Show me more</a>
-
             </div>
-
             <div class="col-md-5 col-lg-6">
                 <img src="css/img/networth.png" id='side' alt="img-fluid">
             </div>
@@ -139,13 +140,9 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <a href="calculator.html" class='btn learn mt-3 mb-5 shadow-lg'>Take me there &nbsp; <i
-                            class='fa fa-arrow-circle-o-right'></i></a>
-
+                    <a href="signin.php" class='btn learn mt-3 mb-5 shadow-lg'>Take me there &nbsp; <i class='fa fa-arrow-circle-o-right'></i></a>
                 </div>
             </div>
-
-
         </div>
     </div>
 
