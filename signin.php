@@ -147,9 +147,9 @@ if(isset($_POST['submit'])){
 			</div> -->
 
 			
-            <h3 class="text-center text-bold mt-3 mb-3" style="color: #00B300; font-weight: 800;">SIGN IN</h3>
+
 				<form id="log-in" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  method="post" name="uform">
-					
+                <h3 class="text-center text-bold mt-3 mb-3" style="color: #00B300; font-weight: 800;">SIGN IN</h3>
 						<input type="text" name="username1" placeholder=" Username" value="" required >
 						 <div id="username1_error" style="color:red;"></div>
 					
