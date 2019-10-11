@@ -160,8 +160,8 @@ if(isset($_POST['submit'])){
 
 					
 
-<!--					<input id="login" name="submit" type="Submit"  value="Sign in">-->
-                    <input type="button" class="button" name="submit" value="Sign In">
+					<input id="login" name="submit" type="Submit"  value="Sign in">
+                    
 
 					<div id="login-alert">
 						<p>Don't have an account?</p>
