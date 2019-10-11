@@ -94,7 +94,7 @@ if(isset($_POST['submit'])){
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-	<title>Login & Signup Page</title>
+	<title>Signup</title>
 
 
 </head>
@@ -142,7 +142,7 @@ if(isset($_POST['submit'])){
 			</div> -->
 
 			<div class="img-form rounded">
-			   <img class="img" src="css/img/dollar-resized3.jpg" height="100" width="100%"/>
+			   
                 <h3 class="text-center text-bold mt-3 mb-3" style="color: #00B300; font-weight: 800;">SIGN UP</h3>
 				<form id="register" class="rounded" style="border-radius: 10px;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return Validate1()" name="vform">
 				<div id="firstname_div">

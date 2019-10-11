@@ -21,6 +21,7 @@ nav li {
    color: #fff;
  }
  
+
  .navbar-nav li:last-child{
    margin-right: 30px;
  }
@@ -32,6 +33,7 @@ nav li {
  
  .navbar-light{
    background: url(../css/img/header.jpg);
+   height:50px;
  }
  
  #nav-logo {
@@ -58,8 +60,8 @@ nav li {
 
 #logo {
    border: 1px solid #bbdee0;
-   height: 500px;
-   width: 450px;
+   height: 40px;
+   width: 90px;
    background-color: rgba(187, 222, 224, 0.14);
    border-radius: 30px;
    padding: 5px;
