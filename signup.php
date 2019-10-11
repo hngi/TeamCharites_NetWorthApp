@@ -145,6 +145,7 @@ if(isset($_POST['submit'])){
 			<div class="img-form">
 			   
 				<form id="register" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return Validate1()" name="vform">
+                <h1 style="color: #00B300;">Sign Up</h1>
 				<div id="firstname_div">
 					<input type="text" name="firstname" placeholder="Firstname" value=""  required="">
 					<div id="fname_error"></div>
