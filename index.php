@@ -47,11 +47,9 @@
                     <li class="nav-item">
 						<a class="nav-link" href="FAQ.html">FAQ</a>
 					</li>
+                                   
                     <li class="nav-item">
-                        <a class="nav-link" href="signup.php">REGISTER</a>
-                    </li>                
-                    <li class="nav-item">
-                        <a class="nav-link" href="signin.php">LOGIN</a>
+                        <a class="nav-link" href="signin.php">SIGN IN</a>
                     </li>                
                 </ul>
             </div>

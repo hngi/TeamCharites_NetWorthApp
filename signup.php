@@ -115,7 +115,9 @@ if(isset($_POST['submit'])){
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">ABOUT</a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculator.html">CALCULATOR</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="howto.html">TIPS</a>
                     </li>
@@ -144,39 +146,39 @@ if(isset($_POST['submit'])){
 			   
 				<form id="register" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return Validate1()" name="vform">
 				<div id="firstname_div">
-					<input type="text" name="firstname" placeholder="Firstname" value=""  required>
+					<input type="text" name="firstname" placeholder="Firstname" value=""  required="">
 					<div id="fname_error"></div>
 				</div>
 
 				<div id="lastname_div">
-					<input type="text" name="lastname" placeholder=" Lastname" value="" required>
+					<input type="text" name="lastname" placeholder=" Lastname" value="" required="">
 					 <div id="lname_error"></div>
 				</div>
 
 				<div id="username_div">
-					<input type="text" name="username" placeholder=" Username" value="" required>
+					<input type="text" name="username" placeholder=" Username" value="" required="">
 					 <div id="username_error" style="color:red;"></div>
 				</div>
 
 				<div id="email_div">
-					<input type="email" name="email" placeholder=" Email address" value="" required>
+					<input type="email" name="email" placeholder=" Email address" value="" required="">
 					 <div id="email_error"> </div>
 				</div>
 
 				<div id="password_div">
-					<input type="password" name="password" placeholder=" Password" required>
+					<input type="password" name="password" placeholder=" Password" required="">
 					<div id="pass_error" style="color:red;"></div>
 				</div>
 
 
 				<div id="pass_confirm_div">
-					<input type="password" name="password_confirm" placeholder="Confirm Password" required=>
+					<input type="password" name="password_confirm" placeholder="Confirm Password" required="">
 					<div id="password_error" style="color:red;"></div>
 				</div>
                <!-- <button id="reg" type="submit" name="submit" value="Sign up" style="text-align: center;">Sign Up</button> -->
 				
 				
-                    <input type="submit" class="button" name="submit" value="Sign Up">
+                    <input type="button" class="button" name="submit" value="Sign Up">
 
 				<div id="register-alert">
 					<p>Have an account?</p>

@@ -71,7 +71,7 @@
 
                 <div class="col-md-6">
                     <h2 class="pt-3">Contact Us</h2>
-                    <form action="contact.html">
+                    <form action="">
                         <input type="text" class='field' placeholder="Your Name" required>
                         <input type="email" class="field" placeholder="Email Address" required>
                         <input type="text" class="field" placeholder="Telephone Number" required>
