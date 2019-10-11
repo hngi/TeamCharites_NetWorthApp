@@ -127,8 +127,8 @@ if(isset($_POST['submit'])){
 						<a class="nav-link" href="FAQ.html">FAQ</a>
 					</li>
                     <li class="nav-item">
-                        <a class="nav-link" href="logout.php">LOGOUT</a>
-                    </li>               
+                        <a class="nav-link" href="signup.php">REGISTER</a>
+                    </li>              
                 </ul>
             </div>
         </div>
