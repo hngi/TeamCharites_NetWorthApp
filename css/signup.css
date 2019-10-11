@@ -98,7 +98,6 @@ nav li {
 
 
 #logo {
-<<<<<<< HEAD
    border: 1px solid #bbdee0;
    height: 40px;
    width: 90px;
@@ -108,17 +107,6 @@ nav li {
    text-align: center;
    line-height: 50px;
    margin-right: 10px;
-=======
-	border: 1px solid #bbdee0;
-	height: 500px;
-	width: 450px;
-	background-color: rgba(187, 222, 224, 0.14);
-	border-radius: 30px;
-	padding: 5px;
-	text-align: center;
-	line-height: 50px;
-	margin-right: 10px;
->>>>>>> e48ee878088f6a04efae8fe30c6907eaea8700d5
 }
 
 #logo h1 {

@@ -122,7 +122,7 @@ if(isset($_POST['submit'])){
                         <a class="nav-link" href="howto.html">TIPS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signup.php">SIGN UP</a>
+                        <a class="nav-link" href="signin.php">SIGN IN</a>
                     </li>     
                     
                 </ul>
@@ -143,7 +143,6 @@ if(isset($_POST['submit'])){
 			</div> -->
 
 			<div class="img-form">
-			   <img class="img" src="css/img/dollar-resized3.jpg"/>
 			   
 				<form id="register" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return Validate1()" name="vform">
 				<div id="firstname_div">
@@ -179,7 +178,7 @@ if(isset($_POST['submit'])){
                <!-- <button id="reg" type="submit" name="submit" value="Sign up" style="text-align: center;">Sign Up</button> -->
 				
 				
-                    <input type="button" class="button" name="submit" value="Sing up">
+                    <input type="button" class="button" name="submit" value="Sign Up">
 
 				<div id="register-alert">
 					<p>Have an account?</p>
