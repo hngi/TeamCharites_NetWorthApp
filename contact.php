@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
 
     $name = trim($_POST["name"]);
     $email = trim($_POST["email"]);
-    $phone = trim($_POST["phone"]);
+    $phone = trim($_POST["number"]);
     $message = trim($_POST["message"]);
 
 if(empty($name)){
