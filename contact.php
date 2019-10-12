@@ -1,6 +1,6 @@
 <?php
-$con = mysqli_connect('sql12.freemysqlhosting.net','sql12307701', 'E5V4g1DbCE');
-mysqli_select_db($con, 'sql12307701');
+$con = mysqli_connect('sql12.freemysqlhosting.net','sql12308286', 'ZwVT4iplj3');
+mysqli_select_db($con,'sql12308286');
 
 $messages='';
 $error='';
