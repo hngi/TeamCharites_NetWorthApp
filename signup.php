@@ -171,7 +171,7 @@ if(isset($_POST['submit'])){
 					<input type="password" name="password_confirm" placeholder="Confirm Password" required="">
 					<div id="password_error" style="color:red;"></div>
 				</div>
-					<input type="button" class="button" name="submit" value="Sing up">
+
 				<div id="register-alert">
 					<p>Have an account?</p>
 					<button type="button" onclick="window.location.href='signin.php'" value="signin">Sign in</button>
