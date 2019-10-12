@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Contact Us</title>
     <!-- Font awesome -->
     <!-- <link href="font-awesome.css" type='text/css' rel="stylesheet"> -->
-    <link href="css/animate.css" rel="stylesheet">
+    <!-- <link href="css/animate.css" rel="stylesheet"> -->
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet"type="text/css" href="css/about.css">
     
 
     <style>
@@ -68,13 +67,14 @@
 
                 <div class="col-md-6">
                     <h2 class="pt-3">Contact Us</h2>
-                    <form action="">
-                        <input type="text" class='field' placeholder="Your Name" required>
-                        <input type="email" class="field" placeholder="Email Address" required>
-                        <input type="text" class="field" placeholder="Telephone Number" required>
-                        <textarea name="" class="field area" id="" placeholder="Message"
+                    <div class="form-messages"></div>
+                    <form action="contact.php" method="POST" id="form-contact">
+                        <input type="text" class='field' name="name" placeholder="Your Name" required>
+                        <input type="email" class="field" name="email" placeholder="Email Address" required>
+                        <input type="text" class="field" name="number" placeholder="Telephone Number" required>
+                        <textarea type="text" name="message" class="field area" id="" placeholder="Message"
                             required></textarea>
-                        <button type="submit" class='btn'>Submit</button>
+                        <button type="submit" name="submit" class='btn' value="send">Submit</button>
                     </form>
                 </div>
             </div>
@@ -121,6 +121,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/contact.js"></script>
 
 </body>
 <!-- Optional JavaScript -->
