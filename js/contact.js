@@ -23,8 +23,10 @@ $(function () {
             })
             .done(function (response) {
                 // Make sure that the formMessages div has the 'success' class.
-                $(formMessages).removeClass('alert-danger');
-                $(formMessages).addClass('alert-success');
+                setTimeout(function(){
+                    $(formMessages).removeClass('alert-danger');
+                    $(formMessages).addClass('alert-success');
+                  }, 2000);
 
                 // Set the message text.
                 $(formMessages).text(response);
@@ -36,8 +38,10 @@ $(function () {
             .fail(function (data) {
                 console.log(data);
                 // Make sure that the formMessages div has the 'error' class.
-                $(formMessages).removeClass('alert-success');
-                $(formMessages).addClass('alert-danger');
+                setTimeout(function(){
+                    $(formMessages).removeClass('alert-success')
+                    $(formMessages).addClass('alert-danger');
+                  }, 2000);
 
                 // Set the message text.
                 if (data.responseText !== '') {
