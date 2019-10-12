@@ -1,6 +1,6 @@
 <?php
-$con = mysqli_connect('sql12.freemysqlhosting.net','sql12307701', 'E5V4g1DbCE');
-mysqli_select_db($con, 'sql12307701');
+$con = mysqli_connect('sql12.freemysqlhosting.net','sql12308286', 'ZwVT4iplj3');
+mysqli_select_db($con, ' sql12308286');
 
 $messages='';
 $error='';
@@ -37,10 +37,10 @@ else {
     $stmt = mysqli_prepare($con, $sql);
     mysqli_stmt_bind_param($name,$email,$phone,$message);
     if(mysqli_stmt_execute($stmt)){
-        $messages='message sent succesfully';
+        echo $messages='message sent succesfully';
     }
     else{
-        $error="Something went wrong. Please try again later.";
+        echo $error="Something went wrong. Please try again later.";
     }
 }
 }
