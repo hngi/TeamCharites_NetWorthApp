@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-md text-white navbar-light">
+    <nav class="navbar navbar-expand-md text-white navbar-light">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='logo' alt="Brand"></a>
             <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -26,7 +26,10 @@
                     </li>
                     <li class="nav-item">
 						<a class="nav-link" href="howto.html">TIPS</a>
-					</li>               
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link" href="FAQ.html">FAQ</a>
+					</li>              
                     <li class="nav-item">
                         <a class="nav-link" href="signin.php">LOGIN</a>
                     </li>                

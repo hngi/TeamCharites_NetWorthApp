@@ -94,37 +94,41 @@ if(isset($_POST['submit'])){
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-	<title>Login & Signup Page</title>
+	<title>Signup</title>
 
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-md text-white navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='logo' alt="Brand"></a>
-            <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon text-white"></span>
-            </button>
-            <div class="collapse navbar-collapse text-white" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+	<nav class="navbar navbar-expand-md text-white navbar-light">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='nav-logo' alt="Brand"></a>
+			<button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse text-white" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">ABOUT</a>
+                        <a class="nav-link" href="about.php">ABOUT</a>
                     </li>
                     <li class="nav-item">
-						<a class="nav-link" href="howto.html">TIPS</a>
-					</li>             
+                        <a class="nav-link" href="calculator.html">CALCULATOR</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signin.php">LOGIN</a>
-                    </li>                
+                        <a class="nav-link" href="howto.html">TIPS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.php">SIGN IN</a>
+                    </li>     
+                    
                 </ul>
-            </div>
-        </div>
-    </nav>
+			</div>
+		</div>
+	</nav>
 
 
 
@@ -138,10 +142,10 @@ if(isset($_POST['submit'])){
 				<a href="#">What?</a>
 			</div> -->
 
-			<div class="img-form rounded">
-			   <img class="img" src="css/img/dollar-resized3.jpg" height="100" width="100%"/>
-                <h3 class="text-center text-bold mt-3 mb-3" style="color: #00B300; font-weight: 800;">SIGN UP</h3>
-				<form id="register" class="rounded" style="border-radius: 10px;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return Validate1()" name="vform">
+			<div class="img-form">
+			   
+				<form id="register" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return Validate1()" name="vform" style="border-radius: 20px;">
+                <h1 style="color: #00B300;">Sign Up</h1>
 				<div id="firstname_div">
 					<input type="text" name="firstname" placeholder="Firstname" value=""  required="">
 					<div id="fname_error"></div>
@@ -172,11 +176,10 @@ if(isset($_POST['submit'])){
 					<input type="password" name="password_confirm" placeholder="Confirm Password" required="">
 					<div id="password_error" style="color:red;"></div>
 				</div>
+               <button id="reg" type="submit" name="submit" value="Sign up" style="text-align: center;">Sign Up</button>   
 				
 				
-
-				<input id="reg" name="submit" type="Submit"  value="Sign up" class="btn btn-success"/>
-
+                    <!-- <input type="button" class="button" name="submit" value="Sign Up"> -->
 
 				<div id="register-alert">
 					<p>Have an account?</p>
@@ -184,9 +187,6 @@ if(isset($_POST['submit'])){
 				</div>
 			</form>
 			</div>
-
-			
-
 		</div>
 
 	</div>

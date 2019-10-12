@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
+
 <head>
     <title>Contact Us</title>
     <!-- Font awesome -->
@@ -41,6 +42,9 @@
                     </li>
                     <li class="nav-item">
 						<a class="nav-link" href="howto.html">TIPS</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link" href="FAQ.html">FAQ</a>
 					</li>
                     <li class="nav-item">
                         <a class="nav-link" href="signup.php">REGISTER</a>
@@ -126,6 +130,4 @@
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-</html>
+</html> 
