@@ -23,25 +23,22 @@ $(function () {
             })
             .done(function (response) {
                 // Make sure that the formMessages div has the 'success' class.
-                setTimeout(function(){
-                    $(formMessages).removeClass('alert-danger');
-                    $(formMessages).addClass('alert-success');
-                  }, 2000);
+                $(formMessages).removeClass('alert-danger');
+                $(formMessages).addClass('alert-success');
 
                 // Set the message text.
                 $(formMessages).text(response);
 
                 // Clear the form.
                 $('#form-contact input:not([type="submit"]), #form-contact textarea').val('');
+                $.location.reload();
             })
 
             .fail(function (data) {
                 console.log(data);
                 // Make sure that the formMessages div has the 'error' class.
-                setTimeout(function(){
-                    $(formMessages).removeClass('alert-success')
-                    $(formMessages).addClass('alert-danger');
-                  }, 2000);
+                $(formMessages).removeClass('alert-success')
+                $(formMessages).addClass('alert-danger');
 
                 // Set the message text.
                 if (data.responseText !== '') {
