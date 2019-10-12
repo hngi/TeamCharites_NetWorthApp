@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 	margin: 0
 	padding: 0;
@@ -26,6 +27,20 @@ body {
 	padding: 5px;
 	width: 25%;
 
+=======
+*{
+    padding:0;
+    margin :0;
+    box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+>>>>>>> develop
 }
 
 #logo {
@@ -33,6 +48,7 @@ body {
     height: auto;
 }
 
+<<<<<<< HEAD
 #menu {
 	width: 40%;
 	margin-right: 10px;
@@ -64,6 +80,51 @@ body {
 	margin-bottom: 70px;
 	border: 1px solid grey;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+=======
+nav li {
+	display: inline-block;
+	margin-left: 40px;
+  }
+  
+  .navbar-nav .nav-link,
+  .navbar-light .navbar-nav .nav-link {
+	color: #fff;
+	/* border-bottom: 2px solid yellow; */
+  }
+  
+  .navbar-nav li:last-child{
+	margin-right: 30px;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+	  color: #00b300;
+  }
+  
+  .navbar-light{
+	background: url(../css/img/header.jpg);
+  }
+  
+  #logo {
+	height: 80px;
+	width: auto;
+	/* float: left; */
+	margin-top: 5px;
+	margin-left: 25px;
+	padding: auto;
+  
+  }
+
+#data {
+	top: 15vh;
+	width: 95%;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	border: 1px solid grey;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 10px;
+>>>>>>> develop
 }
 
 #data h3 {
@@ -72,6 +133,11 @@ body {
 	margin-top: 30px;
 	margin-bottom: 10px;
 	text-align: center;
+<<<<<<< HEAD
+=======
+	font-size: 30px;
+
+>>>>>>> develop
 }
 
 #data h5 {
@@ -122,7 +188,11 @@ body {
 	width: 80%;
 	padding: 5px;
 	margin: 30px auto 20px auto;
+<<<<<<< HEAD
 	font-size: 16px;
+=======
+	font-size: 18px;
+>>>>>>> develop
 	font-weight: bold;
 }
 
@@ -137,18 +207,32 @@ body {
 }
 
 #reset {
+<<<<<<< HEAD
 	background-color: rgba(0,179,0,0.8);
 	color: white;
 	border-radius: 10px;
+=======
+	background-color: #00b300;
+	color: white;
+	border-radius: 5px;
+>>>>>>> develop
 	width: 164px;
 	height: 40px;
 	font-size: 16px;
 	font-style: normal;
+<<<<<<< HEAD
 	font-weight: bold;
+=======
+	/* font-weight: bold; */
+>>>>>>> develop
 	line-height: 22px;
 	border-color: #00B300;
 	outline: none;
 	cursor: pointer;
+<<<<<<< HEAD
+=======
+	margin-bottom: 20px;
+>>>>>>> develop
 }
 
 #reset:hover {
@@ -169,14 +253,29 @@ body {
 }
 
 .entry label {
+<<<<<<< HEAD
 	font-size: 18px;
 }
 
+=======
+	font-size: 16px;
+}
+
+
+>>>>>>> develop
 #assets input, #liabilities input {
 	border: 1px solid grey;
 	box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
 	outline: none;
 	height: 25px;
+<<<<<<< HEAD
+=======
+	box-sizing: border-box;
+	padding: 5px;
+	border-radius: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+>>>>>>> develop
 }
 
 #assets input:focus, #liabilities input:focus {
@@ -184,12 +283,23 @@ body {
 } 
 
 #moreAssets button, #moreLiabilities button {
+<<<<<<< HEAD
 	background: rgba(192,192,192,0.9);
 	outline: none;
 }
 
 #moreAssets button:hover, #moreLiabilities button:hover {
 	color: #00B300;;
+=======
+	background: #00B300;
+	color:whitesmoke;
+}
+
+#moreAssets button:hover, #moreLiabilities button:hover {
+	color: #00B300;
+	border: 1px solid #00B300;
+	background: #fafcfe;
+>>>>>>> develop
 }
 
 #moreAssets, #moreLiabilities {
@@ -208,7 +318,11 @@ body {
 #totalAssets, #totalLiabilities {
 	margin-top: 35px;
 	margin-bottom: 15px;
+<<<<<<< HEAD
 	font-size: 16px;
+=======
+	font-size: 18px;
+>>>>>>> develop
 }
 
 #worth {
@@ -216,6 +330,7 @@ body {
 }
 
 footer {
+<<<<<<< HEAD
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -230,6 +345,61 @@ footer {
     bottom: 0;
     width: 100%;
 }
+=======
+	background-color: #333;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 80%;
+	margin-top: 20px;
+  }
+  
+  .footer-nav {
+	list-style: none;
+	float: left;
+  }
+  
+  
+  
+  .footer-nav li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+  
+  .footer-nav li:last-child {
+	margin-right: 0;
+  }
+  
+  .footer-nav li a:link,
+  .footer-nav li a:visited, {
+	text-decoration: none;
+	border: 0;
+	color: #888;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+  }
+  
+  .footer-nav li a:hover,
+  .footer-nav li a:active {
+	color: #ddd;
+  }
+  
+  footer p {
+	color: #fff;
+	/* text-align: center; */
+	margin-top: 10px;
+	line-height: 2em;
+  }
+  footer h3{
+	font-size: 22px;
+	color: #00b300;
+  }
+  footer address{
+	font-size: 14px;
+	color: #fefffe;
+	line-height: 2em;
+  }
+>>>>>>> develop
 
 
 @media screen and (max-width: 900px) {
@@ -237,6 +407,14 @@ footer {
 		flex-direction: column;
 	}
 
+<<<<<<< HEAD
+=======
+	#logo{
+		height : 50px;
+		width: auto;
+	}
+
+>>>>>>> develop
 	#assets, #liabilities {
 		border: 1px solid grey;
 		width: 90%;
@@ -251,6 +429,7 @@ footer {
 
 @media screen and (max-width: 600px) {
 
+<<<<<<< HEAD
 	#nav {
 		padding-top: 17px;
 	}
@@ -266,4 +445,7 @@ footer {
 	#menu li a {
 		font-size: 12px;
 		font-weight: normal;
+=======
+
+>>>>>>> develop
 }
