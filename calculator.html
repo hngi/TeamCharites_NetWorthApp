@@ -1,3 +1,74 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" type="text/css" href="css/calculator.css">
+    	<script src="js/calculator.js"></script>
+    	<title>Calculate Your Networth</title>
+    </head>
+    <body onload="notify()">
+        <div id="image">
+            <nav id="nav">
+                <div id="logo-div"><img src="img/logo.png" id="logo" alt="logo"></div>
+                <ul id="menu">
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="calculator.html">DATA</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+            
+        <div id="data">
+            <h3>NETWORTH CALCULATOR</h3>
+            <h5>Quickly add the value of your portfolio, assets and liabilities and get your networth</h5>
+            <div id="calculator">
+                <div id="assets">
+	                <p>Assets</p>
+	                <hr class="rule">
+
+                    <div class="extra">
+	                <div class="entry"><label for="home">Your home:</label><input class= "change" type="text" id="home" placeholder=" Enter asset value" onfocusout="calculateWorth(this, 'assets')"></div>
+
+	                <div class="entry"><label>Shares:</label><input class= "change" type="text" id="shares" placeholder=" Enter asset value" onfocusout="calculateWorth(this, 'assets')"></div>
+
+	                <div class="entry"><label>Savings:</label><input class= "change" type="text" id="savings" placeholder=" Enter asset value" onfocusout="calculateWorth(this, 'assets')"></div>
+
+	                <div class="entry"><label>Trusts:</label><input class= "change" type="text" id="trusts" placeholder=" Enter asset value" onfocusout="calculateWorth(this, 'assets')"></div>
+
+	                <div id="moreAssets" class="addItems"><button onclick="moreAssetsOrLiabilities('assets')">Add item</button></div>
+
+	                <div id="totalAssets"> YOUR TOTAL ASSETS IS: #<span id="justAssets"></span></div>
+                </div>
+                </div>
+
+                <div id="liabilities">
+	                <p>Liabilities</p>
+	                <hr class="rule">
+
+                    <div class="extra">
+	                <div class="entry"><label>Student Loan:</label><input class= "change" type="text" id="studentLoan" placeholder=" Enter liability value" onfocusout="calculateWorth(this, 'liabilities')"></div>
+	                <div class="entry"><label>Home mortgage:</label><input class= "change" type="text" id="homeMortgage" placeholder=" Enter liability value" onfocusout="calculateWorth(this, 'liabilities')"></div>
+	                <div class="entry"><label>Credit card debit:</label><input class= "change" type="text" id="creditCardDebit" placeholder=" Enter liability value" onfocusout="calculateWorth(this, 'liabilities')">
+                    </div><div class="entry"><label>Car Loan:</label><input class= "change" type="text" id="carLoan" placeholder=" Enter liability value" onfocusout="calculateWorth(this, 'liabilities')"></div>
+
+
+                    <div id="moreLiabilities" class="addItems"><button onclick="moreAssetsOrLiabilities('liabilities')">Add item:</button></div>
+
+                    <div id="totalLiabilities"> YOUR TOTAL LIABILITIES IS: #<span id="justLiabilities"></span></div>
+                    </div>
+                </div>
+                </div>
+
+                <p id="displayWorth">YOUR NETWORTH IS: #<span id="worth"></span></p>
+                <div id="reset-div"><button id="reset" onclick= "Reset()">reset</button></div>
+            </div>
+        </div>
+        <footer>&copy; Team Charites</footer>
+    </body>
+=======
 <?php session_start();
 // if(isset($_SESSION['name'])){
 // 	header('Location: calculator.html');
@@ -44,7 +115,13 @@
                     </li>
                     <li class="nav-item">
 						<a class="nav-link" href="howto.html">TIPS</a>
-					</li>               
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">LOGOUT</a>
+                    </li>              
                 </ul>
             </div>
         </div>
@@ -141,4 +218,5 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/calculator.js"></script>
 
+>>>>>>> develop
 </html>

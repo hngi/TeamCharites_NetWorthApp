@@ -25,17 +25,15 @@ $(function () {
                 // Make sure that the formMessages div has the 'success' class.
                 $(formMessages).removeClass('alert-danger');
                 $(formMessages).addClass('alert-success');
-
                 // Set the message text.
-                $(formMessages).text(response);
+                $(formMessages).text('message sent successfully');
 
                 // Clear the form.
                 $('#form-contact input:not([type="submit"]), #form-contact textarea').val('');
-                $.location.reload();
+
             })
 
             .fail(function (data) {
-                console.log(data);
                 // Make sure that the formMessages div has the 'error' class.
                 $(formMessages).removeClass('alert-success')
                 $(formMessages).addClass('alert-danger');

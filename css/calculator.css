@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+body {
+	margin: 0
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#image {
+	border: 1px solid transparent;
+	background: url(https://res.cloudinary.com/barbzy-dev1/image/upload/v1569413300/dollar-resized4_x83i65.jpg) top center no-repeat;
+	height: 11vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	opacity: 0.8;
+	background-color: black;
+}
+
+#nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo-div {
+	padding: 5px;
+	width: 25%;
+
+=======
 *{
     padding:0;
     margin :0;
@@ -10,6 +40,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+>>>>>>> develop
 }
 
 #logo {
@@ -17,6 +48,39 @@ body {
     height: auto;
 }
 
+<<<<<<< HEAD
+#menu {
+	width: 40%;
+	margin-right: 10px;
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	align-self: center;
+}
+
+#menu li a {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	margin: 0 15px;
+	padding: 5px;
+	opacity: ;
+	font-weight: bold;
+}
+
+#menu li a:hover {
+	color: #00B300;
+}
+
+#data {
+	position: relative;
+	top: 15vh;
+	width: 95%;
+	margin: auto;
+	margin-bottom: 70px;
+	border: 1px solid grey;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+=======
 nav li {
 	display: inline-block;
 	margin-left: 40px;
@@ -60,6 +124,7 @@ nav li {
 	border: 1px solid grey;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 10px;
+>>>>>>> develop
 }
 
 #data h3 {
@@ -68,8 +133,11 @@ nav li {
 	margin-top: 30px;
 	margin-bottom: 10px;
 	text-align: center;
+<<<<<<< HEAD
+=======
 	font-size: 30px;
 
+>>>>>>> develop
 }
 
 #data h5 {
@@ -120,7 +188,11 @@ nav li {
 	width: 80%;
 	padding: 5px;
 	margin: 30px auto 20px auto;
+<<<<<<< HEAD
+	font-size: 16px;
+=======
 	font-size: 18px;
+>>>>>>> develop
 	font-weight: bold;
 }
 
@@ -135,19 +207,32 @@ nav li {
 }
 
 #reset {
+<<<<<<< HEAD
+	background-color: rgba(0,179,0,0.8);
+	color: white;
+	border-radius: 10px;
+=======
 	background-color: #00b300;
 	color: white;
 	border-radius: 5px;
+>>>>>>> develop
 	width: 164px;
 	height: 40px;
 	font-size: 16px;
 	font-style: normal;
+<<<<<<< HEAD
+	font-weight: bold;
+=======
 	/* font-weight: bold; */
+>>>>>>> develop
 	line-height: 22px;
 	border-color: #00B300;
 	outline: none;
 	cursor: pointer;
+<<<<<<< HEAD
+=======
 	margin-bottom: 20px;
+>>>>>>> develop
 }
 
 #reset:hover {
@@ -168,20 +253,29 @@ nav li {
 }
 
 .entry label {
+<<<<<<< HEAD
+	font-size: 18px;
+}
+
+=======
 	font-size: 16px;
 }
 
 
+>>>>>>> develop
 #assets input, #liabilities input {
 	border: 1px solid grey;
 	box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
 	outline: none;
 	height: 25px;
+<<<<<<< HEAD
+=======
 	box-sizing: border-box;
 	padding: 5px;
 	border-radius: 5px;
 	padding-right: 10px;
 	padding-left: 10px;
+>>>>>>> develop
 }
 
 #assets input:focus, #liabilities input:focus {
@@ -189,6 +283,14 @@ nav li {
 } 
 
 #moreAssets button, #moreLiabilities button {
+<<<<<<< HEAD
+	background: rgba(192,192,192,0.9);
+	outline: none;
+}
+
+#moreAssets button:hover, #moreLiabilities button:hover {
+	color: #00B300;;
+=======
 	background: #00B300;
 	color:whitesmoke;
 }
@@ -197,6 +299,7 @@ nav li {
 	color: #00B300;
 	border: 1px solid #00B300;
 	background: #fafcfe;
+>>>>>>> develop
 }
 
 #moreAssets, #moreLiabilities {
@@ -215,7 +318,11 @@ nav li {
 #totalAssets, #totalLiabilities {
 	margin-top: 35px;
 	margin-bottom: 15px;
+<<<<<<< HEAD
+	font-size: 16px;
+=======
 	font-size: 18px;
+>>>>>>> develop
 }
 
 #worth {
@@ -223,6 +330,22 @@ nav li {
 }
 
 footer {
+<<<<<<< HEAD
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	background-color: #3A3A3A;
+	color: white;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 17px;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+=======
 	background-color: #333;
 	padding-top: 30px;
 	padding-left: 30px;
@@ -276,6 +399,7 @@ footer {
 	color: #fefffe;
 	line-height: 2em;
   }
+>>>>>>> develop
 
 
 @media screen and (max-width: 900px) {
@@ -283,11 +407,14 @@ footer {
 		flex-direction: column;
 	}
 
+<<<<<<< HEAD
+=======
 	#logo{
 		height : 50px;
 		width: auto;
 	}
 
+>>>>>>> develop
 	#assets, #liabilities {
 		border: 1px solid grey;
 		width: 90%;
@@ -302,5 +429,23 @@ footer {
 
 @media screen and (max-width: 600px) {
 
+<<<<<<< HEAD
+	#nav {
+		padding-top: 17px;
+	}
 
+	#menu {
+		width: 15%;
+	}
+
+	#logo-div {
+		width: 15%;
+	}
+
+	#menu li a {
+		font-size: 12px;
+		font-weight: normal;
+=======
+
+>>>>>>> develop
 }

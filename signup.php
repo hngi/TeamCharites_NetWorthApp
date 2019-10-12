@@ -94,7 +94,7 @@ if(isset($_POST['submit'])){
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-	<title>Login & Signup Page</title>
+	<title>Signup</title>
 
 
 </head>
@@ -113,7 +113,7 @@ if(isset($_POST['submit'])){
                         <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">ABOUT</a>
+                        <a class="nav-link" href="about.php">ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="calculator.html">CALCULATOR</a>
@@ -121,9 +121,7 @@ if(isset($_POST['submit'])){
                     <li class="nav-item">
                         <a class="nav-link" href="howto.html">TIPS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="signup.php">SIGN UP</a>
-                    </li>     
+                    
                     
                 </ul>
 			</div>
@@ -143,9 +141,6 @@ if(isset($_POST['submit'])){
 			</div> -->
 
 			<div class="img-form">
-			   <img class="img" src="css/img/dollar-resized3.jpg"/>
-			   
-				<form id="register" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" onsubmit="return Validate1()" name="vform">
 				<div id="firstname_div">
 					<input type="text" name="firstname" placeholder="Firstname" value=""  required="">
 					<div id="fname_error"></div>
@@ -176,10 +171,6 @@ if(isset($_POST['submit'])){
 					<input type="password" name="password_confirm" placeholder="Confirm Password" required="">
 					<div id="password_error" style="color:red;"></div>
 				</div>
-               <!-- <button id="reg" type="submit" name="submit" value="Sign up" style="text-align: center;">Sign Up</button> -->
-				
-				
-                    <input type="button" class="button" name="submit" value="Sing up">
 
 				<div id="register-alert">
 					<p>Have an account?</p>
