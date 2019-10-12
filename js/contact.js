@@ -35,7 +35,6 @@ $(function () {
             })
 
             .fail(function (data) {
-                console.log(data);
                 // Make sure that the formMessages div has the 'error' class.
                 $(formMessages).removeClass('alert-success')
                 $(formMessages).addClass('alert-danger');
