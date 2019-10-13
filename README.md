@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+# main_files
+
+Added a Signup/Signin page that opens when the Signin button is clicked.
+
+Added a Networth Calculator. Click the Data Link to access the Networth Calculator.
+
+These are not the final designs and they can be improved on.
+
+The backend guys should kindly start working on the database and make use of the forms
+
+Added Navbar Links to the Signin/Signup page
+
+Added a reset button for the Calculator
+
+
+
+=======
 
 # CharitesNetWorthWeb
 
@@ -86,3 +104,4 @@ Charites Finance is a start up that aims to create a stable financial life for i
 About the App
 
 This free calculator helps you get a view of your financial positon by adding the values of your assets and substracting your liabilites.
+>>>>>>> develop
