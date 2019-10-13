@@ -1,108 +1,147 @@
-<?php include 'controllers/authController.php'
-?>
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" type="text/css" href="css/sign-up.css">
-	    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-	    <title>Login Page</title>
-    </head>
-    <body>
-         
-    	<div id="container">
-             <nav id="nav">
-                <!-- <div id="logo-div"><img src="logo.png" id="logo" alt="logo"></div> -->
-                    <ul>
-                        <li><a href="homepage.html">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="calculator.html">DATA</a></li>
-                        <li><a href="sign-up.html">CONTACT</a></li>
-                    </ul>
-                     
-                </nav>
 
-    	    <!-- <div id="logo">
-    		    <h1>CODE HEIST</h1>
-    		    <h2 onload="animate()">
-    		    	<span class="animate">A</span>
-    		    	<span class="animate">r</span>
-    		    	<span class="animate">e</span> 
-    		    	<span class="animate">Y</span>
-    		    	<span class="animate">o</span>
-    		    	<span class="animate">u</span> 
-    		    	<span class="animate">R</span>
-    		    	<span class="animate">e</span>
-    		    	<span class="animate">a</span>
-    		    	<span class="animate">d</span>
-    		    	<span class="animate">y</span> 
-    		    	<span class="animate">T</span>
-    		    	<span class="animate">o</span> 
-    		    	<span class="animate">E</span>
-    		    	<span class="animate">x</span>
-    		    	<span class="animate">p</span>
-    		    	<span class="animate">l</span>
-    		    	<span class="animate">o</span>
-    		    	<span class="animate">r</span>
-    		    	<span class="animate">e</span>
-    		    	<span class="animate">?</span>
-    		    </h2>
-    	    </div> -->
-
-             <!-- <nav id="nav"> -->
-                <!-- <div id="logo-div"><img src="logo.png" id="logo" alt="logo"></div> -->
-                   <!--  <ul>
-                        <li><a href="homepage.html">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="calculator.html">DATA</a></li>
-                        <li><a href="sign-up.html">CONTACT</a></li>
-                    </ul> -->
-                     
-                <!-- </nav> -->
-
-            <div id="form-container">
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<title>Signup</title>
 
 
-                <!-- <div class="header-links">
-                    <a href="#">What?</a>
-                </div> -->
+</head>
 
-                <div class="img-form">
-                   <img class="img" src="img/dollar-resized3.jpg"/>
-                   
-                    <form id="log-in" action="login.php" method="post">
-                        <input type="text" name="username" placeholder=" Username" required>
-                        <input type="password" name="password" placeholder=" Password" required>
+<body>
 
-                        <input id="login" type="Submit" value="Sign in">
+	<nav class="navbar navbar-expand-md text-white navbar-light">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="css/img/nav.png" id='nav-logo' alt="Brand"></a>
+			<button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse text-white" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculator.html">CALCULATOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="howto.html">TIPS</a>
+                    </li>
+                    
+                    
+                </ul>
+			</div>
+		</div>
+	</nav>
 
-                        <div id="login-alert">
-                            <p>Don't have an account?</p>
-                            <button type="button" onclick="showRegister()" value="signup">Sign Up</button>
-                        </div>
-                    </form>
+
+
+	<div id="container">
+
+
+		<div id="form-container">
+
+
+			<!-- <div class="header-links">
+				<a href="#">What?</a>
+			</div> -->
+
+			<div class="img-form">
+				<div id="firstname_div">
+					<input type="text" name="firstname" placeholder="Firstname" value=""  required="">
+					<div id="fname_error"></div>
+				</div>
+
+				<div id="lastname_div">
+					<input type="text" name="lastname" placeholder=" Lastname" value="" required="">
+					 <div id="lname_error"></div>
+				</div>
+
+				<div id="username_div">
+					<input type="text" name="username" placeholder=" Username" value="" required="">
+					 <div id="username_error" style="color:red;"></div>
+				</div>
+
+				<div id="email_div">
+					<input type="email" name="email" placeholder=" Email address" value="" required="">
+					 <div id="email_error"> </div>
+				</div>
+
+				<div id="password_div">
+					<input type="password" name="password" placeholder=" Password" required="">
+					<div id="pass_error" style="color:red;"></div>
+				</div>
+
+
+				<div id="pass_confirm_div">
+					<input type="password" name="password_confirm" placeholder="Confirm Password" required="">
+					<div id="password_error" style="color:red;"></div>
+				</div>
+					<input type="button" class="button" name="submit" value="Sign up">
+				<div id="register-alert">
+
+					<p>Have an account?</p>
+					<button type="button" onclick="window.location.href='signin.php'" value="signin">Sign in</button>
+				</div>
+			</form>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	
+
+	<footer>
+        <div class="container footer-height">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3>About Us</h3>
+                    <p>Charites Finance is a start up that aims to create a stable financial life for its users. We are
+                        interested in helping you have a knowledge of your current financial status and assist you in
+                        maximizing your money for a secure future.</p>
                 </div>
-
-                <form id="register" action="signup.php" method="post">
-                    <input type="text" name="firstname" placeholder=" Firstname">
-                    <input type="text" name="lastname" placeholder=" Lastname">
-                    <input type="text" name="username" placeholder=" Username">
-                    <input type="email" name="email" placeholder=" Email address">
-                    <input type="password" name="password" placeholder=" Password">
-		    <input type="password" name="passwordConf" placeholder=" Confirm Passwword">
-
-                    <input id="reg" type="Submit" value="Sign up">
-
-                    <div id="register-alert">
-                        <p>Have an account?</p>
-                        <button type="button" onclick="hideRegister()" value="signin">Sign in</button>
-                    </div>
-                </form>
-
+                <div class="col-md-4">
+                    <h3>About the App</h3>
+                    <p>This free calculator helps you get a view of your financial positon by adding the values of your
+                        assets and substracting your liabilites.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contact Us</h3>
+                    <address style="margin-bottom:30px;">
+                        Team Charites <br>
+                        3, Remote House,<br>
+                        HNG Avenue, Nigeria <br>
+                        +234-1111-0000 <br>
+                        info@charitesfinance.com
+                    </address>
+                </div>
             </div>
-
+            <div class="row">
+                <div class="col-md-12">
+                <p style='text-align: center' class='animated rollIn'>
+                    CharitesFinance.com &copy;  2019
+                </p>
+            </div>
+            </div>
         </div>
-        <script type="text/javascript" src="js/sign-up.js"></script>
-    </body>
+        </footer>
+
+ 
+
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+	<script type="text/javascript" src="js/signup.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
 </html>
